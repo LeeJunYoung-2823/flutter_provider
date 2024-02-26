@@ -36,6 +36,10 @@ class MyHomePage extends StatelessWidget {
     /// watch : 해당 위젯이 상태값의 변경을 감지한다.
     /// read : 상태값을 읽으나 변경을 감시하지 않는다.
     /// select : 특정 상태값만을 감시한다.
+
+    /// watch : Provider의 변화를 감지해 데이터를 얻고 해당 메소드가 포함된 위젯을 재빌드
+    /// read : Provider의 데이터를 읽고 변경할 수 있음 (접근은 하지만 재빌드는 안함)
+    /// select : watch와 유사하게 변화를 감지하고 위젯을 재빌드 하지만 Provider내의 특정 속성의 변화만을 감지 가능
     //final counter = Provider.of<Counter>(context); // watch
     //final counter = Provider.of<Counter>(context, listen: false); // read
 
